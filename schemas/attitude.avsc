@@ -1,0 +1,40 @@
+{
+  "type": "record",
+  "name": "Attitude",
+  "namespace": "eu.rawfie.uxv.nested",
+  "fields": [
+    {
+      "name": "header",
+      "type": {
+        "type": "record",
+        "name": "Header",
+        "fields": [
+          {
+            "name": "sourceSystem",
+            "type": "string"
+          },
+          {
+            "name": "sourceModule",
+            "type": "string"
+          },
+          {
+            "name": "time",
+            "type": "long"
+          }
+        ]
+      }
+    },
+    {
+      "name": "phi",
+      "type": "float"
+    },
+    {
+      "name": "theta",
+      "type": "float"
+    },
+    {
+      "name": "psi",
+      "type": "float"
+    }
+  ]
+}
